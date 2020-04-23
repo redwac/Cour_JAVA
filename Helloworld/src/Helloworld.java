@@ -1,5 +1,57 @@
 public class Helloworld {
     public static void main(String args[]) {
+
+
+        Voiture voitureR5 = new Voiture();
+        Voiture voitureR6 = new Voiture("jaune");
+        Voiture voitureR7 = new Voiture(5);
+        Voiture voitureR = new Voiture();
+        voitureR.nbrPort=4;
+        voitureR.auto=false;
+        voitureR.coleur="rouge";
+
+        System.out.println("le nombre des roues de tous voitures est : "+Voiture.nbroue);
+
+        System.out.println("la voiture de micheal est " + voitureR.coleur + " il dispose de " + voitureR.nbrPort + " portes " );
+
+        voitureR.tourner(false,47);
+
+
+        voitureR.rapportC(true);
+        voitureR.rapportC(true);
+        voitureR.rapportC(false);
+        voitureR.rapportC(true);
+        voitureR.rapportC(false);
+        voitureR.rapportC(true);
+        System.out.println("la  vitesse de reda est : " + voitureR.rapportC(true) + "KM/h");
+        int nvvr = voitureR.rapportC(true);
+        System.out.println("la nouvelle vitesse  de reda est : " + nvvr + "KM/h");
+        voitureR.klaxonner();
+        voitureR.accelerer();
+        System.out.println("la nouvelle vitesse est : " + voitureR.accelerer() + "KM/h");
+
+        int nvv = voitureR.accelerer();
+        System.out.println("la nouvelle vitesse est : " + nvv + "KM/h");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         System.out.println("Hello world");
         int age = 35;
         boolean B1=true;
