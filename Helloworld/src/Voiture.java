@@ -1,6 +1,6 @@
 import org.w3c.dom.ls.LSOutput;
 
-public class Voiture {
+public class Voiture extends Vehicule{
     int nbrPort = 4;
     boolean auto;
     String coleur ;

@@ -40,7 +40,7 @@ public class Planete {
             System.out.println("aucun vesseau ne s'en va");
         }
         else {
-            System.out.println("un vesseau de type :" + vesseauA.TypV + " doit s'en aller");
+            System.out.println("un vesseau de type :" + vesseauA.typV + " doit s'en aller");
         }
 
 

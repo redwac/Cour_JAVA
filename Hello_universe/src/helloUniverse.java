@@ -14,12 +14,12 @@ public class helloUniverse {
         mars.mariereP="tellurique";
         mars.diametreP=	6792l;
         Vesseau nouveauVesseau = new Vesseau();
-        nouveauVesseau.TypV="fraget";
+        nouveauVesseau.typV="fraget";
         nouveauVesseau.nbrPassager=9;
         mars.acceuillirVesseau(nouveauVesseau);
 
         Vesseau autreVeseau = new Vesseau();
-        autreVeseau.TypV="croiseur";
+        autreVeseau.typV="croiseur";
         autreVeseau.nbrPassager=42;
         mars.acceuillirVesseau(autreVeseau);
         System.out.println("le nombre des habittant est : "+ mars.vesseauA.nbrPassager);
@@ -54,6 +54,24 @@ public class helloUniverse {
         System.out.println("la forme de tous les planetes est : "+Planete.forme);
         System.out.println("la forme de mars est :"+ mars.forme);
         System.out.println("le nombre des planette est : "+Planete.nombreplanette);
+
+        VesseauDeGuerre chasseur=new VesseauDeGuerre();
+        chasseur.blindage=156;
+        chasseur.resistanceDeBuclier=2;
+        chasseur.typV="CHASSEUR";
+
+        VesseauCivil vesseauMonde=new VesseauCivil();
+        vesseauMonde.blindage=4784;
+        vesseauMonde.resistanceDeBuclier=30;
+        vesseauMonde.typV="Vesseau-Monde";
+
+        vesseauMonde.activerBouclier();
+        chasseur.activerBouclier();
+        chasseur.attaque(vesseauMonde,"lasére photomique",3);
+        vesseauMonde.desactiverBouclier();
+
+        System.out.println("la résistance d'une bouclier de VM est "+vesseauMonde.resistanceDeBuclier);
+        System.out.println("le blindage de VM est "+vesseauMonde.blindage);
 
     }
 
