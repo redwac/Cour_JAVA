@@ -7,6 +7,7 @@ public class Voiture extends Vehicule{
     int vitesse ;
     static int nbroue=4;
     int nbrou2;
+
     Voiture(){
         System.out.println("la voiture est encoure de construction");
     }
