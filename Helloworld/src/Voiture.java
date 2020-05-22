@@ -1,12 +1,13 @@
 import org.w3c.dom.ls.LSOutput;
 
-public class Voiture {
+public class Voiture extends Vehicule{
     int nbrPort = 4;
     boolean auto;
     String coleur ;
     int vitesse ;
     static int nbroue=4;
     int nbrou2;
+
     Voiture(){
         System.out.println("la voiture est encoure de construction");
     }

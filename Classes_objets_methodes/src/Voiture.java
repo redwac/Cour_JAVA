@@ -1,10 +1,14 @@
-public class Voiture {
 
+
+public class Voiture extends Vehicule implements Videngeable {
+
+    TypeBoitVitesse typB;
     int nbrPort  ;
     String nom ;
     boolean auto;
     String coleur ;
     int vitesse ;
+
     int vitesseV ;
     Moteur moteur ;
     Proprietaire proprietair ;
@@ -16,9 +20,13 @@ public class Voiture {
 
 
     //}
-Voiture(Moteur moteur){
-    this.moteur=moteur;
-}
+    // supe est conseiller pour rappeler le onstructeur par defaut de la classe mère
+    Voiture(){
+        super();
+    }
+
+
+
     Ville transporter(Passager passagera,Ville villeDeppart){
         System.out.println("je transporte un passager qui s'appel : "+pass.nomPassager);
         System.out.println("le passager est parti de la ville de : "+vil.nomVille);
@@ -58,5 +66,16 @@ Voiture(Moteur moteur){
             vitesse--;
         }
         return vitesse ;
+    }
+
+    @Override
+    public void videnger() {
+        System.out.println("devisser le bouchon et attend que ca coule ");
+    }
+
+    @Override
+    void klaxoner() {
+        System.out.println("tuuutuuu!!!!!");
+
     }
 }
